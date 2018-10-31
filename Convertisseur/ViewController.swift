@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var deviseView: UIView!
+    @IBOutlet weak var distanceView: UIView!
+    @IBOutlet weak var temperatureView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    @IBAction func buttonAction(_ sender: Any) {
+    }
 }
 
