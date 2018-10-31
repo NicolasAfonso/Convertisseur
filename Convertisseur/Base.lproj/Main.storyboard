@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="135.19999999999999" y="133.00492610837438"/>
         </scene>
-        <!--View Controller-->
+        <!--Convert Controller View Controller-->
         <scene sceneID="l9W-OS-zdd">
             <objects>
-                <viewController id="ojf-bf-c0n" sceneMemberID="viewController">
+                <viewController id="ojf-bf-c0n" customClass="ConvertControllerViewController" customModule="Convertisseur" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFy-gz-Hc0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +228,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="updatedTextField:" destination="ojf-bf-c0n" eventType="editingChanged" id="lS2-Yy-jm3"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -253,6 +256,9 @@
                                                     <constraint firstAttribute="height" constant="45" id="hsk-Ba-Zqg"/>
                                                 </constraints>
                                                 <state key="normal" image="change"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="ojf-bf-c0n" eventType="touchUpInside" id="n1g-0V-qQE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,6 +298,9 @@
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="ojf-bf-c0n" eventType="touchUpInside" id="NxK-yo-HKk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -312,6 +321,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pev-wk-BC4"/>
                     </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="zRm-p7-NAU" id="YQv-Bt-U3D"/>
+                        <outlet property="inputView" destination="Wpy-Vc-XSg" id="aFF-kc-pMf"/>
+                        <outlet property="outputLabel" destination="8Xi-gG-cRf" id="sFh-sj-Lvb"/>
+                        <outlet property="outputView" destination="uSx-fY-PsG" id="T4G-ya-KE3"/>
+                        <outlet property="title" destination="KmT-at-lpW" id="imm-r3-lt1"/>
+                        <outlet property="todoLabel" destination="faT-9Q-c0S" id="7oL-HY-8t4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLF-Hw-IZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
