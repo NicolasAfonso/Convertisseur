@@ -12,6 +12,7 @@
 		6CF9E5A42189F76000780E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9E5A22189F76000780E98 /* Main.storyboard */; };
 		6CF9E5A62189F76200780E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9E5A52189F76200780E98 /* Assets.xcassets */; };
 		6CF9E5A92189F76200780E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9E5A72189F76200780E98 /* LaunchScreen.storyboard */; };
+		6CF9E5B1218A0C9500780E98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9E5B0218A0C9500780E98 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6CF9E5A52189F76200780E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CF9E5A82189F76200780E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CF9E5AA2189F76200780E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF9E5B0218A0C9500780E98 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../Mobile App Services/Age de chat/README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6CF9E59D2189F76000780E98 /* Convertisseur */ = {
 			isa = PBXGroup;
 			children = (
+				6CF9E5B0218A0C9500780E98 /* README.md */,
 				6CF9E59E2189F76000780E98 /* AppDelegate.swift */,
 				6CF9E5A02189F76000780E98 /* ViewController.swift */,
 				6CF9E5A22189F76000780E98 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			files = (
 				6CF9E5A92189F76200780E98 /* LaunchScreen.storyboard in Resources */,
 				6CF9E5A62189F76200780E98 /* Assets.xcassets in Resources */,
+				6CF9E5B1218A0C9500780E98 /* README.md in Resources */,
 				6CF9E5A42189F76000780E98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
