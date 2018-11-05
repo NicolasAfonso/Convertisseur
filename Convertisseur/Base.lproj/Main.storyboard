@@ -199,8 +199,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="JSt-vn-VMr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmT-at-lpW">
-                                <rect key="frame" x="20" y="44" width="335" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmT-at-lpW">
+                                <rect key="frame" x="20" y="52" width="335" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Ufc-b8-ytM"/>
                                 </constraints>
@@ -208,8 +208,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-p3-SCY">
-                                <rect key="frame" x="20" y="110" width="335" height="235"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-p3-SCY">
+                                <rect key="frame" x="20" y="147" width="335" height="235"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpy-Vc-XSg">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
@@ -305,10 +305,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JSt-vn-VMr" firstAttribute="leading" secondItem="pev-wk-BC4" secondAttribute="leading" id="3es-Iq-H4r"/>
                             <constraint firstItem="pev-wk-BC4" firstAttribute="trailing" secondItem="KmT-at-lpW" secondAttribute="trailing" constant="20" id="7Bz-9U-bzf"/>
                             <constraint firstAttribute="bottom" secondItem="JSt-vn-VMr" secondAttribute="bottom" id="7XR-ZB-MTX"/>
                             <constraint firstItem="JSt-vn-VMr" firstAttribute="top" secondItem="DFy-gz-Hc0" secondAttribute="top" id="9Mx-Mt-VUf"/>
-                            <constraint firstItem="Ohs-p3-SCY" firstAttribute="top" secondItem="KmT-at-lpW" secondAttribute="bottom" constant="20" id="G2s-RU-Gp1"/>
+                            <constraint firstItem="JSt-vn-VMr" firstAttribute="trailing" secondItem="pev-wk-BC4" secondAttribute="trailing" id="BOW-5b-Y96"/>
+                            <constraint firstItem="Ohs-p3-SCY" firstAttribute="top" secondItem="KmT-at-lpW" secondAttribute="bottom" constant="20" id="EZC-C6-tUu"/>
+                            <constraint firstAttribute="bottom" secondItem="JSt-vn-VMr" secondAttribute="bottom" id="HOm-HV-mJq"/>
                             <constraint firstItem="KmT-at-lpW" firstAttribute="leading" secondItem="pev-wk-BC4" secondAttribute="leading" constant="20" id="ITd-Tm-fX7"/>
                             <constraint firstItem="JSt-vn-VMr" firstAttribute="leading" secondItem="pev-wk-BC4" secondAttribute="leading" id="Sbx-5O-1RZ"/>
                             <constraint firstItem="0wD-Kg-wqJ" firstAttribute="leading" secondItem="pev-wk-BC4" secondAttribute="leading" constant="20" id="Vfo-h9-YGL"/>
@@ -317,16 +320,18 @@
                             <constraint firstAttribute="trailing" secondItem="JSt-vn-VMr" secondAttribute="trailing" id="etT-lD-KyB"/>
                             <constraint firstItem="Ohs-p3-SCY" firstAttribute="leading" secondItem="pev-wk-BC4" secondAttribute="leading" constant="20" id="fr1-zV-3SW"/>
                             <constraint firstItem="pev-wk-BC4" firstAttribute="trailing" secondItem="Ohs-p3-SCY" secondAttribute="trailing" constant="20" id="gfL-EU-0Dm"/>
+                            <constraint firstItem="JSt-vn-VMr" firstAttribute="top" secondItem="DFy-gz-Hc0" secondAttribute="top" id="kLo-52-t71"/>
+                            <constraint firstItem="KmT-at-lpW" firstAttribute="top" secondItem="pev-wk-BC4" secondAttribute="top" constant="8" id="kg9-J3-vDq"/>
                             <constraint firstItem="pev-wk-BC4" firstAttribute="bottom" secondItem="0wD-Kg-wqJ" secondAttribute="bottom" constant="20" id="wLj-ZQ-1Zt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pev-wk-BC4"/>
                     </view>
                     <connections>
                         <outlet property="dataTextField" destination="zRm-p7-NAU" id="YQv-Bt-U3D"/>
-                        <outlet property="inputView" destination="Wpy-Vc-XSg" id="aFF-kc-pMf"/>
+                        <outlet property="inputTextField" destination="Wpy-Vc-XSg" id="Gpd-Ir-XSF"/>
                         <outlet property="outputLabel" destination="8Xi-gG-cRf" id="sFh-sj-Lvb"/>
                         <outlet property="outputView" destination="uSx-fY-PsG" id="T4G-ya-KE3"/>
-                        <outlet property="title" destination="KmT-at-lpW" id="imm-r3-lt1"/>
+                        <outlet property="titleLabel" destination="KmT-at-lpW" id="mwt-RC-KP8"/>
                         <outlet property="todoLabel" destination="faT-9Q-c0S" id="7oL-HY-8t4"/>
                     </connections>
                 </viewController>
